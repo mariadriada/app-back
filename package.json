@@ -1,7 +1,7 @@
 {
   "name": "app-back",
   "version": "1.0.0",
-  "description": "API Rest with MongoDB and node.js using mongoose",
+  "description": "API Rest with Node.js, MongoDB and express using mongoose",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/mariadriada/app-back/issues"
   },
-  "homepage": "https://github.com/mariadriada/app-back#readme"
+  "homepage": "https://github.com/mariadriada/app-back#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.18"
+  }
 }
