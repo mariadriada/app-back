@@ -1,0 +1,19 @@
+{
+  "name": "app-back",
+  "version": "1.0.0",
+  "description": "API Rest with MongoDB and node.js using mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariadriada/app-back.git"
+  },
+  "author": "mariagiraldo4@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariadriada/app-back/issues"
+  },
+  "homepage": "https://github.com/mariadriada/app-back#readme"
+}
