@@ -18,12 +18,16 @@ module.exports = {
         }).catch(error => console.log(error)) 
 
         // Signal to diconected database ok
-        mongoose.connection.on('disconnected', () => console.log('Disconnected database!'))
+        mongoose.connection.on('disconnected', () => {
+            this.connection = null
+            console.log('Disconnected database!')
+        })
         // return connection object
         return this.connection     
     },    
     //Close database connection
     close: function() {
-        mongoose.connection.close(() => process.exit(0))   
+        //mongoose.connection.close(() => process.exit(0))   
+        mongoose.connection.close()
     }
 }
