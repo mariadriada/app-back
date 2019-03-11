@@ -3,7 +3,9 @@ API Rest with Node.js, MongoDB and express using mongoose
 
 # How test this api
 
-Clone repository
+## Clone repository
+
+git clone https://github.com/mariadriada/app-back.git
 
 ## Available Scripts
 
