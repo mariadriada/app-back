@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "b8064674-e315-49b2-ac28-8ea2d246eb1c",
+		"name": "app-back Request",
+		"description": " \"app-back\" Request to test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/provider",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/provider",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"provider"
+					]
+				},
+				"description": "Get all items"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/provider",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\"firstName\": \"Last Test Provider\",\n    \"lastName\": \"Murphy\",\n    \"middleName\": \"A\",\n    \"email\": \"Melody.Walter@gmail.com\",\n    \"specialty\": {\n        \"_id\": \"59c564a5133d091dce065d8a\"\n    },\n    \"projectedStartDate\": \"2018-06-07\",\n    \"employerId\": 334,\n    \"providerType\": \"NP\",\n    \"staffStatus\": \"PROVISIONAL\",\n    \"assignedTo\": \"12345\",\n    \"status\": \"AWAITING_DECISION\",\n    \"createdBy\": 8763,\n    \"updatedBy\": 40168\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/provider",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"provider"
+					]
+				},
+				"description": "Create item"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/provider/_id/5c85cf7e801c556d70b48e7a",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \n    \"firstName\": \"Last Test Provider Updated\",\n    \"lastName\": \"Updated\"\n   \n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/provider/_id/5c85cf7e801c556d70b48e7a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"provider",
+						"_id",
+						"5c85cf7e801c556d70b48e7a"
+					]
+				},
+				"description": "Update Item"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/provider/firstName/Proveedor13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/provider/firstName/Proveedor13",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"provider",
+						"firstName",
+						"Proveedor13"
+					]
+				},
+				"description": "Get items for fields"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/provider/_id/5c85cf7e801c556d70b48e7a",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/provider/_id/5c85cf7e801c556d70b48e7a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"provider",
+						"_id",
+						"5c85cf7e801c556d70b48e7a"
+					]
+				},
+				"description": "Get item for field"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/provider/_id/59c564f1133d091dce065deb",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/provider/_id/59c564f1133d091dce065deb",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"provider",
+						"_id",
+						"59c564f1133d091dce065deb"
+					]
+				},
+				"description": "Delete Item"
+			},
+			"response": []
+		}
+	]
+}
