@@ -13,7 +13,7 @@ In the project directory, you can run:
 
 Install dependencies
 
-### Create file connectionString.js in forder:
+### Open file connectionString.js in forder:
 app-back/app/config/
 
 This file must be contain a code that will send for email for you can using it.
